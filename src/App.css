@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #432b0cee;
+  color: rgb(233, 217, 202)
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-container {
+  background-color: rgb(140, 91, 55);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-toggle button {
+  width: 50%;
+  padding: 10px;
+  background-color:  #5e3815;
+  color: rgb(202, 193, 187);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.form-toggle .active {
+    background-color: tan;
+    color: rgb(22, 22, 21);
+}
+
+.form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form h2 {
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 4px solid #a1773b;
+  border-radius: 10px;
+  background-color: bisque;
+  color: rgb(56, 31, 1);
+}
+
+::placeholder{
+  color: #5e3815;
+  opacity: 1;
+}
+
+::-ms-input-placeholder{
+  color: #5e3815;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form button {
+  padding: 10px;
+  background-color: #5e3815;
+  color: bisque;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: burlywood;
+  color: rgb(145, 86, 31);
+}
+
+.form a {
+  color: bisque;
+  text-decoration: none;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.form p {
+  text-align: center;
 }
