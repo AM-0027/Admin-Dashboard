@@ -1,11 +1,19 @@
-import './App.css';
-import AuthForm from './AuthForm';
+import React, { useState } from "react";
+import AuthForm from "./AuthForm";
+import Main from "./Main"; 
+
 
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
   return (
-   <div>
-    <AuthForm/>
-   </div>
+    <>
+      {isAuthenticated ? (
+        <Main />
+      ) : (
+        <AuthForm onLoginSuccess={() => setIsAuthenticated(true)} />
+      )}
+    </>
   );
 }
 
