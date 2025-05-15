@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AuthForm from "./AuthForm";
-import Main from "./Main"; 
+import Sidebar from "./components/Sidebar";
 
 
 function App() {
@@ -9,11 +9,12 @@ function App() {
   return (
     <>
       {isAuthenticated ? (
-        <Main />
+        <Sidebar />
       ) : (
         <AuthForm onLoginSuccess={() => setIsAuthenticated(true)} />
-      )}
-    </>
+      )}  
+      
+      </>
   );
 }
 
