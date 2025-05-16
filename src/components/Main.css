@@ -1,36 +1,3 @@
-:root {
-  --glass: rgba(255, 255, 255, 0.2);
-}
-
-.main {
-  background: linear-gradient(
-    106.37deg,
-    #ffe1bc 29.63%,
-    #ffcfd1 51.55%,
-    #f3c6f1 90.85%
-  );
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "inter", sans-serif;
-}
-
-.Glass {
-  background-color: rgba(255, 255, 255, 0.575);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* for Safari */
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  display: grid;
-  height: 98%;
-  width: 98%;
-  border-radius: 3rem;
-  overflow: hidden;
-  grid-template-columns: 11rem auto 28rem;
-}
-
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -79,10 +46,6 @@
   transition: all 300ms ease;
   border-radius: 0.7rem;
 }
-
-/* .menu-item:hover {
-  background-color: #ffcfd1;
-} */
 
 .active {
   background-color: #ffcfd1;

@@ -8,8 +8,6 @@ const Sidebar = () => {
   const [selected, setSelected] = React.useState(0);
 
   return (
-    <div className="main">
-      <div className="Glass">
         <div className="sidebar">
           <div className="logo">
             <img src={logo} alt="Logo" />
@@ -34,8 +32,6 @@ const Sidebar = () => {
             })}
           </div>
         </div>
-      </div>
-    </div>
   );
 };
 

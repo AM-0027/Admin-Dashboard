@@ -1,0 +1,13 @@
+.Cards {
+  display: flex;
+  gap: 20px; 
+  padding: 20px;
+  flex-wrap: nowrap; 
+  overflow-x: auto; 
+}
+
+.parentsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
